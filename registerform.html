@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="regidesign.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Register to Traffic Pro</h2>
+            <p>Fill up this form to access TrafficPro.</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your Name">
+                
+                <label for="surname">Surname</label>
+                <input type="text" id="surname" placeholder="Enter your Surname">
+
+                <label for="gender_multiple" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+                <select id="gender_multiple" class="styled-select">
+                    <option value="" disabled selected>Choose Gender</option>
+                    <option value="MA">Male</option>
+                    <option value="FE">Female</option>  
+                    <option value="OT">Other</option>   
+                </select>
+                
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your Username">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+                
+                <button type="button" onclick="handleRegister()">Register</button>
+            </form>
+            <p class="signup-link">You already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+    </div>
+    <script src="login.js"></script> <!-- Include the JavaScript file here -->
+</body>
+</html>

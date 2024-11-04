@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="maindesign.css">
+</head>
+<body onload="initializeMainPage()">
+    <!-- Burger menu -->
+    <div class="burger-menu" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div id="menu" class="menu">
+            <div class="menu-item" onclick="viewProfile()">View Profile</div>
+            <div class="menu-item" onclick="chatUs()">Chat Us</div>
+            <div class="menu-item" onclick="logout()">Log Out</div>
+        </div>
+    </div>
+
+    <!-- Menu -->
+    
+
+    <!-- Profile picture -->
+    <div class="profile-container">
+        <div class="profile-pic">
+            <img id="profilePic" src="https://i.ibb.co/Vx5M5zY/image.png" alt="Profile">
+        </div>
+        <span class="profile-name">Profile</span>
+    </div>
+
+    <!-- Icons grid -->
+    <div class="grid" id="grid">
+        <div class="icon-button" onclick="handleIconClick('Problem')">
+            <div class="icon-oval">
+                <img src="https://i.ibb.co/WxF5TYN/issue-12124521.png" alt="Problem">
+            </div>
+            <div class="icon-title">Problem</div>
+        </div>
+        <div class="icon-button" onclick="handleIconClick('Disaster')">
+            <div class="icon-oval">
+                <img src="https://i.ibb.co/X5zhyfK/image.png" alt="Disaster">
+            </div>
+            <div class="icon-title">Disaster</div>
+        </div>
+        <div class="icon-button" onclick="goToTrafficRoute()">
+            <div class="icon-oval">
+                <img src="https://i.ibb.co/Y2ypFdm/image.png" alt="Traffic">
+            </div>
+           
+            <div class="icon-title">Traffic</div>
+        </div>
+        <div class="icon-button" onclick="handleIconClick('Police')">
+            <div class="icon-oval"> 
+                <img src="https://i.ibb.co/7jT3Z16/image.png" alt="Police">
+            </div>
+            <div class="icon-title">Police</div>
+        </div>
+        <div class="icon-button" onclick="handleIconClick('Accident')">
+            <div class="icon-oval">
+                <img src="https://i.ibb.co/JnyFQSR/image.png" alt="Accident">
+            </div>
+            <div class="icon-title">Accident</div>
+        </div>
+        <div class="icon-button" onclick="handleIconClick('Place')">
+            <div class="icon-oval">
+                <img src="https://i.ibb.co/dtgBpM4/image.png" alt="Place">
+            </div>
+            <div class="icon-title">Place</div>
+        </div>
+        <div class="icon-button" onclick="handleIconClick('Fuel Prices')">
+            <div class="icon-oval">
+                <img src="https://i.ibb.co/VwyDFvP/image.png" alt="Fuel Prices">
+            </div>
+            <div class="icon-title">Fuel Prices</div>
+        </div>
+    </div>
+
+    <!-- Profile Section -->
+    <div id="profileSection" style="display: none;">
+        <h2>User Profile</h2> 
+        <div id="userInfo" class="user-info-box">
+            
+            <!-- User information will be populated here -->
+        </div>
+        <button onclick="goBack()" class="back-button">Back to Main</button>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+</body>
+</html>
